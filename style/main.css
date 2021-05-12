@@ -1,0 +1,45 @@
+:root {
+    --vermelho:#E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--vermelho);
+    font-size: 40px;
+    font-weight:600;
+    margin: 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-left: 15px;
+}
+
+header nav a:hover{
+    color: white;
+}
+
+#txtBusca{
+    background-color: var(--preta);
+    border: none;
+    margin-left: 15px;
+    forced-color-adjust: white;
+}
