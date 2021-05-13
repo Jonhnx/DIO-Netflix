@@ -9,9 +9,12 @@
     box-sizing: border-box;
 }
 
+/*Base*/
+
 body {
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container {
@@ -37,9 +40,46 @@ header nav a:hover{
     color: white;
 }
 
-#txtBusca{
-    background-color: var(--preta);
+/*Filme principal*/
+
+.anime-principal {
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)100%),url("../img/akame.jpg");
+    background-size: cover;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.anime-principal .container .titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+}
+
+.anime-principal .container .quantidade-musica {
+    margin: 6% 0 6% 27.5%;
+    font-size: 15px;
+}
+
+.botoes .botao {
+    background-color: rgba(0,0,0,.40);
     border: none;
-    margin-left: 15px;
-    forced-color-adjust: white;
+    color: white;
+
+    padding: 2.4% 5%;
+    margin: 2.5% 0 0 9%;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
 }
